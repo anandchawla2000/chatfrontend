@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 const { io } = require("socket.io-client");
 // const socket = io("http://localhost:5000");
-const socket =io(process.env.REACT_APP_BackendURL);
+const socket =io("https://chat-backend-3a3r.onrender.com");
 export const ChatPage = () => {
   const [msg, setmsg] = useState("");
   const [msginfo, setmsginfo] = useState([]);
