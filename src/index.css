@@ -1,13 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+.containerfluid {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  width: 90vw;
+}
+.tac {
+  text-align: center;
+}
+.image img {
+  height: 80px;
+  width: 80px;
+}
+/* name page */
+.mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  background-color: #6666ff;
+  color: white;
+  text-transform: uppercase;
+}
+.namepg {
+  background-color: #e6e6e6;
+}
+.mainbox input[type="text"]{
+  height: 35px;
+  padding: 5px 0px;
+  padding-left: 4px;
+  font-size: 18px;
+}
+.mainbox button{
+  height: 35px;
+  padding: 5px 0px;
+  padding-left: 4px;
+  font-size: 18px;
+  margin-left: 5px;
+}
+/* chat box */
+.ownermsg {
+  display: flex;
+  justify-content: end;
+}
+.othermsg {
+  display: flex;
+  justify-content: start;
+}
+.ownermsg .msg {
+  margin-top: 4px;
+  /* width: 50px; */
+  min-height: 35px;
+  max-height: max-content;
+  background-color: #cccccc;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 50% 75%, 0% 75%);
+}
+.othermsg .msg {
+  margin-top: 4px;
+  /* width: 50px; */
+  min-height: 35px;
+  max-height: max-content;
+  background-color: #66ff66;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 51% 76%, 0 100%, 0 76%, 0% 75%);
+}
+.msg p{
+  font-size: 18px;
+  padding: 4px 4px 4px 8px;
+}
+/* .ownermsg .msg::after {
+  content: "";
+  width: 12px;
+  background-color: palegoldenrod;
+  position: absolute;
+  border: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+} */
+.containerchatbox {
+  height: 98vh;
+  width: 90vw;
+  /* background-color: red; */
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.containerchatbox .chatbox {
+  width: 90%;
+  height: 80%;
+  /* background-color: purple; */
+  border: 1px solid black;
+  background-color: white;
+  margin: auto;
+  margin-top: 12px;
+  overflow-y: auto;
+}
+/* sendbox */
+.inputbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+} 
+.sendbox{
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.sendbox input[type="text"]{
+  width: 95%;
+  height: 50px;
+  padding: 5px 0px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.sendbox button{
+  width: 4%;
+  margin-left: 1%;
+  height: 45px;
+  font-size: 18px;
 }
